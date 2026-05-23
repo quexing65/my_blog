@@ -1,0 +1,44 @@
+{
+	"meta": {
+		"title": "My Blog",
+		"description": "A personal blog",
+		"username": "User"
+	},
+	"theme": {
+		"colorBrand": "#2fcbe7",
+		"colorPrimary": "#5B423F",
+		"colorSecondary": "#8b7667",
+		"colorBrandSecondary": "#eec25e",
+		"colorBg": "#d4e8f3",
+		"colorBorder": "#ffffff",
+		"colorCard": "#ffffff99",
+		"colorArticle": "#ffffffcc"
+	},
+	"backgroundColors": [
+		"#f7da3987",
+		"#8fdbe9",
+		"#fffef8"
+	],
+	"artImages": [],
+	"currentArtImageId": "",
+	"backgroundImages": [
+		{
+			"id": "",
+			"url": ""
+		}
+	],
+	"currentBackgroundImageId": "",
+	"socialButtons": [],
+	"clockShowSeconds": false,
+	"summaryInContent": false,
+	"isCachePem": false,
+	"hideEditButton": false,
+	"enableCategories": true,
+	"currentHatIndex": 3,
+	"hatFlipped": false,
+	"enableChristmas": false,
+	"beian": {
+		"text": "",
+		"link": ""
+	}
+}
