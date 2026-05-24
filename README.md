@@ -1,7 +1,10 @@
-<<<<<<< HEAD
+# quexing更新：
+
+该项目初始直接复制了[https://github.com/YYsuni/2025-blog-public ](https://github.com/YYsuni/2025-blog-public)该项目。后续会在该项目上持续更新。
+
 # 2025 Blog
 
-> 最新引导说明：https://www.yysuni.com/blog/readme
+> 最新引导说明：[https://www.yysuni.com/blog/readme ](https://www.yysuni.com/blog/readme)
 
 该项目使用 Github App 管理项目内容，请保管好后续创建的 **Private key**，不要上传到公开网上。
 
@@ -30,7 +33,7 @@ export const GITHUB_CONFIG = {
 
 ![](https://www.yysuni.com/blogs/readme/95dee9a69154d0d0.png)
 
-大约 60 秒会部署完成，有一个直接 vercel 域名，如：https://2025-blog-public.vercel.app/
+大约 60 秒会部署完成，有一个直接 vercel 域名，如：<https://2025-blog-public.vercel.app/>
 
 到这里部署网站已经完成了，下一步创建 Github App
 
@@ -54,7 +57,6 @@ export const GITHUB_CONFIG = {
 
 ![](https://www.yysuni.com/blogs/readme/aa002e6805ab2d65.png)
 
-
 ### 创建密钥
 
 创建好 Github App 后会提示必须创建一个 **Private Key**，直接创建，会自动下载（不见了也不要紧，后面自己再创建再下载就行）。页面上有个 **App ID** 需要复制一下
@@ -69,14 +71,15 @@ export const GITHUB_CONFIG = {
 
 点击安装，就完成了 Github App 管理该仓库的权限设置了。下一步就是让前端知道推送那个项目，就是最开始提到的环境变量。（如果你不会设置环境变量，直接改仓库文件 `src/consts.ts` 也行。因为是公开的，所以环境变量意义也不大）
 
-直接输入这几个环境变量值就行，一般只用设置 OWNER 和 APP_ID。其它配置不用管，直接输入创建就行。
+直接输入这几个环境变量值就行，一般只用设置 OWNER 和 APP\_ID。其它配置不用管，直接输入创建就行。
 
 ![](https://www.yysuni.com/blogs/readme/c5a049d737848abf.png)
 
 设置完成后，需要手动再部署一次，让环境变量生效。
-* 可以直接 push 一次仓库代码会触发部署
-* 也可以手动选择创建一次部署
-![](https://www.yysuni.com/blogs/readme/59a802ed8d1c3a13.png)
+
+- 可以直接 push 一次仓库代码会触发部署
+- 也可以手动选择创建一次部署
+  ![](https://www.yysuni.com/blogs/readme/59a802ed8d1c3a13.png)
 
 ## 4. 完成
 
@@ -109,6 +112,7 @@ export const GITHUB_CONFIG = {
 ### 8.1 移除 Liquid Grass
 
 进入 `src/layout/index.tsx` 文件，删除两行代码，然后提交代码到你的 github
+
 ```tsx
 const LiquidGrass = dynamic(() => import('@/components/liquid-grass'), { ssr: false })
 // 中间省略...
@@ -121,7 +125,7 @@ const LiquidGrass = dynamic(() => import('@/components/liquid-grass'), { ssr: fa
 
 首页的内容现在只能前端配置一部分，所以代码更改在 `src/app/(home)` 目录，这个目录代表首页所有文件。首页的具体文件为  `src/app/(home)/page.tsx`
 
- ![](https://www.yysuni.com/blogs/readme/011679cd9bf73602.png)
+![](https://www.yysuni.com/blogs/readme/011679cd9bf73602.png)
 
 这里可以看到有很多 `Card` 文件，需要改那个首页 Card 内容就可以点入那个具体文件修改。
 
@@ -133,14 +137,14 @@ const LiquidGrass = dynamic(() => import('@/components/liquid-grass'), { ssr: fa
 
 对于完全不是**程序员**的用户，确实会对于更新代码后，如何同步，如何**合并代码**手足无措。我创建了一个 **QQ群**（加群会简单点），或者 vx 群还是 tg 群会好一点可以 issue 里面说下就行。
 
-QQ 群：[https://qm.qq.com/q/spdpenr4k2](https://qm.qq.com/q/spdpenr4k2)
+QQ 群：<https://qm.qq.com/q/spdpenr4k2>
+
 > 不好意思，之前的那个qq群ID（1021438316），不知道为啥搜不到😂
 
 微信群：刚建好了一个微信群，没有 qq 的可以用这个微信群
 ![](https://www.yysuni.com/blogs/readme/343f2c62035b8e23.webp)
 
-tg 群：1月1号，才创建的 tg 群 https://t.me/public_blog_2025
-
+tg 群：1月1号，才创建的 tg 群 <https://t.me/public_blog_2025>
 
 应该主要是我自己亲自帮助你们遇到问题怎么办。（后续看看有没有好心人）
 
