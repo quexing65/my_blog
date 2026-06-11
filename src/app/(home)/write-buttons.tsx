@@ -34,16 +34,6 @@ export default function WriteButton() {
 	return (
 		<HomeDraggableLayer cardKey='writeButtons' x={x} y={y} width={styles.width} height={styles.height}>
 			<motion.div initial={{ left: x, top: y }} animate={{ left: x, top: y }} className='absolute flex items-center gap-4'>
-				<motion.a
-					href='https://b.quexing.cc.cd'
-					target='_blank'
-					initial={{ opacity: 0, scale: 0.6 }}
-					animate={{ opacity: 1, scale: 1 }}
-					whileHover={{ scale: 1.05 }}
-					whileTap={{ scale: 0.95 }}
-					className='bg-card card relative rounded-xl px-3 py-2.5 font-medium whitespace-nowrap'>
-					旧博客
-				</motion.a>
 				<motion.button
 					onClick={() => router.push('/write')}
 					initial={{ opacity: 0, scale: 0.6 }}

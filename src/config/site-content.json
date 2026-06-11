@@ -54,10 +54,10 @@
 			"order": 3
 		},
 		{
-			"id": "juejin",
-			"type": "juejin",
-			"value": "https://juejin.cn/user/2427311675422382",
-			"label": "稀土掘金",
+			"id": "blog-docs",
+			"type": "link",
+			"value": "https://b.quexing.cc.cd",
+			"label": "博客文档",
 			"order": 2
 		},
 		{
