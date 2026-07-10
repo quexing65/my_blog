@@ -49,3 +49,6 @@ next-env.d.ts
 
 # trae
 .trae/
+
+# local dev log
+dev.log

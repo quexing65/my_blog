@@ -156,9 +156,20 @@ export default function SocialButtons() {
 			)
 		}
 
-		if (button.type === 'email' || button.type === 'wechat' || button.type === 'qq') {
-			const messageMap: Record<'email' | 'wechat' | 'qq', string> = {
-				email: '邮箱已复制到剪贴板',
+		if (button.type === 'email') {
+			return (
+				<motion.a
+					key={button.id}
+					href='/contact'
+					{...commonProps}
+					className='card btn relative rounded-xl p-1.5'>
+					<Icon className='size-8' />
+				</motion.a>
+			)
+		}
+
+		if (button.type === 'wechat' || button.type === 'qq') {
+			const messageMap: Record<'wechat' | 'qq', string> = {
 				wechat: '微信号已复制到剪贴板',
 				qq: 'QQ号已复制到剪贴板'
 			}
@@ -166,7 +177,7 @@ export default function SocialButtons() {
 			const isImagePath = button.value.startsWith('/images/social-buttons/')
 			const isOpen = openDropdowns[button.id] || false
 
-			if (isImagePath && (button.type === 'wechat' || button.type === 'qq')) {
+			if (isImagePath) {
 				return (
 					<div key={button.id} className='relative'>
 						<motion.button
@@ -222,7 +233,7 @@ export default function SocialButtons() {
 					key={button.id}
 					onClick={() => {
 						navigator.clipboard.writeText(button.value).then(() => {
-							toast.success(messageMap[button.type as 'email' | 'wechat' | 'qq'])
+							toast.success(messageMap[button.type as 'wechat' | 'qq'])
 						})
 					}}
 					{...commonProps}
@@ -239,8 +250,8 @@ export default function SocialButtons() {
 					href={button.value}
 					target='_blank'
 					{...commonProps}
-					className='card relative flex items-center gap-2 rounded-xl px-3 py-2.5 font-medium whitespace-nowrap'>
-					{hasLabel ? button.label : button.value}
+					className='font-averia card relative flex items-center gap-2 rounded-xl border px-3 py-1.5 text-xl font-medium whitespace-nowrap'>
+					𝓺𝓾𝓮𝔁𝓲𝓷𝓰
 				</motion.a>
 			)
 		}
